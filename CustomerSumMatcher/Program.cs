@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
+using CustomerSumMatcher.Implementations;
 using CustomerSumMatcher.Interfaces;
-using CustomerSumMatcher.Model;
 
 namespace CustomerSumMatcher
 {
@@ -9,12 +8,12 @@ namespace CustomerSumMatcher
     {
         static void Main(string[] args)
         {
-            IReportItemsParser partialReportParser = null;
-            ICustomersReportParser customersReportParser = null;
-            ICustomerSumMatcher customerSumMatcher = null;
-
-            var partialReportItems = partialReportParser.Parse("");
-            var customerTotals = customersReportParser.Parse("");
+            IReportItemsParser partialReportParser = new ReportItemsParser();
+            ICustomersReportParser customersReportParser =new CustomersReportParser();
+            ICustomerSumMatcher customerSumMatcher = new Implementations.CustomerSumMatcher();
+            var basePath = AppDomain.CurrentDomain.BaseDirectory + "\\Data";
+            var partialReportItems = partialReportParser.Parse(basePath + "\\PartialReports.csv");
+            var customerTotals = customersReportParser.Parse(basePath + "\\Totals.csv");
 
             var result = customerSumMatcher.Match(partialReportItems, customerTotals);
         }

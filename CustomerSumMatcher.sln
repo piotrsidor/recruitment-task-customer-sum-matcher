@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerSumMatcher", "CustomerSumMatcher\CustomerSumMatcher.csproj", "{90B6B674-2F52-42B5-9CA0-030FE7FB39CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerSumMatcher.Tests", "CustomerSumMatcher.Tests\CustomerSumMatcher.Tests.csproj", "{0B0D1749-2E5B-4167-B340-80B962225F9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{90B6B674-2F52-42B5-9CA0-030FE7FB39CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90B6B674-2F52-42B5-9CA0-030FE7FB39CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90B6B674-2F52-42B5-9CA0-030FE7FB39CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B0D1749-2E5B-4167-B340-80B962225F9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B0D1749-2E5B-4167-B340-80B962225F9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B0D1749-2E5B-4167-B340-80B962225F9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B0D1749-2E5B-4167-B340-80B962225F9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
